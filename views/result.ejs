@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your submitted information</title>
+</head>
+<style>
+    body{
+        margin-top: 100px;
+        width: 1200px;        
+    }
+    div{
+        border: 2px solid black;
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;        
+    }
+    h1{
+        text-decoration: underline;
+    }
+    p, h4{
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Submitted Information</h1>
+        <h4>Name:</h4> <p><%= context.name %></p>
+        <br>
+        <h4>Dojo Location:</h4> <p><%= context.location %></p>
+        <br>
+        <h4>Favorite Language:</h4> <p><%= context.fav_language %></p>
+        <br>
+        <h4>Comment:</h4> <p><%= context.comment %></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to the amazing Survey Form!</title>
+</head>
+
+<style>
+    body{
+        margin-top: 100px;
+        width: 1200px;        
+    }
+    div{
+        border: 2px solid black;
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;        
+    }
+</style>
+
+<body>
+    <div>
+        <form action="/submit" method="post">
+            <label for="name">Your Name: </label> <input type="text" name="name" id="name">
+            <br>
+            <label for="location">Dojo Location: </label> 
+            <select name="location" id="location">
+                <option>Seattle, WA</option>
+                <option>D.C., Washington D.C.</option>
+                <option>L.A., CA</option>
+                <option>Houston, TX</option>
+                <option>Seoul, KR</option>
+            </select>
+            <br>
+            <label for="fav_language">Favorite Language:</label> 
+            <select name="fav_language" id="fav_language">
+                <option>Java</option>
+                <option>HTML/CSS</option>
+                <option>Python</option>
+                <option>Javascript</option>
+                <option>C#</option>
+                <option>iOS</option>
+            </select>
+            <br>
+            <label for="comment">Comment (optional):</label> 
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
